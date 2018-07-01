@@ -7,19 +7,43 @@
 //
 
 import UIKit
+import ReplayKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, RPPreviewViewControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "start", style: .plain, target: self, action: #selector(startRecording))
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @objc func startRecording() {
+        let recorder = RPScreenRecorder.shared()
+        recorder.startRecording { [unowned self] (error) in
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+            
+            self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "stop", style: .plain, target: self, action: #selector(self.stopRecording))
+
+        }
+    }
+    
+    @objc func stopRecording() {
+        let recorder = RPScreenRecorder.shared()
+        recorder.stopRecording { [unowned self] (preview, error) in
+            self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "start", style: .plain, target: self, action: #selector(self.startRecording))
+
+            guard let preview = preview else {
+                return
+            }
+            
+            self.present(preview, animated: true, completion: nil)
+        }
     }
 
-
+    func previewControllerDidFinish(_ previewController: RPPreviewViewController) {
+        dismiss(animated: true)
+    }
 }
 
