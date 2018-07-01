@@ -12,7 +12,46 @@
 		19034A3920E9251D00510B3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19034A3720E9251D00510B3E /* Main.storyboard */; };
 		19034A3B20E9251E00510B3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19034A3A20E9251E00510B3E /* Assets.xcassets */; };
 		19034A3E20E9251E00510B3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19034A3C20E9251E00510B3E /* LaunchScreen.storyboard */; };
+		19034A4C20E92FB600510B3E /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19034A4B20E92FB600510B3E /* ReplayKit.framework */; };
+		19034A4F20E92FB600510B3E /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19034A4E20E92FB600510B3E /* SampleHandler.swift */; };
+		19034A5620E92FB700510B3E /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19034A4B20E92FB600510B3E /* ReplayKit.framework */; };
+		19034A5820E92FB700510B3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19034A5720E92FB700510B3E /* UIKit.framework */; };
+		19034A5B20E92FB700510B3E /* BroadcastSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19034A5A20E92FB700510B3E /* BroadcastSetupViewController.swift */; };
+		19034A5F20E92FB700510B3E /* UploadExtensionSetupUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 19034A5520E92FB700510B3E /* UploadExtensionSetupUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		19034A6220E92FB700510B3E /* UploadExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 19034A4920E92FB600510B3E /* UploadExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19034A5D20E92FB700510B3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19034A2820E9251D00510B3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19034A5420E92FB700510B3E;
+			remoteInfo = UploadExtensionSetupUI;
+		};
+		19034A6020E92FB700510B3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19034A2820E9251D00510B3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19034A4820E92FB600510B3E;
+			remoteInfo = UploadExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		19034A6920E92FB700510B3E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				19034A5F20E92FB700510B3E /* UploadExtensionSetupUI.appex in Embed App Extensions */,
+				19034A6220E92FB700510B3E /* UploadExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		19034A3020E9251D00510B3E /* Study-ReplayKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Study-ReplayKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +61,14 @@
 		19034A3A20E9251E00510B3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19034A3D20E9251E00510B3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19034A3F20E9251E00510B3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19034A4920E92FB600510B3E /* UploadExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = UploadExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		19034A4B20E92FB600510B3E /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		19034A4E20E92FB600510B3E /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
+		19034A5020E92FB600510B3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19034A5520E92FB700510B3E /* UploadExtensionSetupUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = UploadExtensionSetupUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		19034A5720E92FB700510B3E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		19034A5A20E92FB700510B3E /* BroadcastSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastSetupViewController.swift; sourceTree = "<group>"; };
+		19034A5C20E92FB700510B3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +79,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		19034A4620E92FB600510B3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19034A4C20E92FB600510B3E /* ReplayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19034A5220E92FB700510B3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19034A5620E92FB700510B3E /* ReplayKit.framework in Frameworks */,
+				19034A5820E92FB700510B3E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -39,6 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				19034A3220E9251D00510B3E /* Study-ReplayKit */,
+				19034A4D20E92FB600510B3E /* UploadExtension */,
+				19034A5920E92FB700510B3E /* UploadExtensionSetupUI */,
+				19034A4A20E92FB600510B3E /* Frameworks */,
 				19034A3120E9251D00510B3E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				19034A3020E9251D00510B3E /* Study-ReplayKit.app */,
+				19034A4920E92FB600510B3E /* UploadExtension.appex */,
+				19034A5520E92FB700510B3E /* UploadExtensionSetupUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +133,33 @@
 			path = "Study-ReplayKit";
 			sourceTree = "<group>";
 		};
+		19034A4A20E92FB600510B3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19034A4B20E92FB600510B3E /* ReplayKit.framework */,
+				19034A5720E92FB700510B3E /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19034A4D20E92FB600510B3E /* UploadExtension */ = {
+			isa = PBXGroup;
+			children = (
+				19034A4E20E92FB600510B3E /* SampleHandler.swift */,
+				19034A5020E92FB600510B3E /* Info.plist */,
+			);
+			path = UploadExtension;
+			sourceTree = "<group>";
+		};
+		19034A5920E92FB700510B3E /* UploadExtensionSetupUI */ = {
+			isa = PBXGroup;
+			children = (
+				19034A5A20E92FB700510B3E /* BroadcastSetupViewController.swift */,
+				19034A5C20E92FB700510B3E /* Info.plist */,
+			);
+			path = UploadExtensionSetupUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +170,52 @@
 				19034A2C20E9251D00510B3E /* Sources */,
 				19034A2D20E9251D00510B3E /* Frameworks */,
 				19034A2E20E9251D00510B3E /* Resources */,
+				19034A6920E92FB700510B3E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				19034A5E20E92FB700510B3E /* PBXTargetDependency */,
+				19034A6120E92FB700510B3E /* PBXTargetDependency */,
 			);
 			name = "Study-ReplayKit";
 			productName = "Study-ReplayKit";
 			productReference = 19034A3020E9251D00510B3E /* Study-ReplayKit.app */;
 			productType = "com.apple.product-type.application";
+		};
+		19034A4820E92FB600510B3E /* UploadExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19034A6820E92FB700510B3E /* Build configuration list for PBXNativeTarget "UploadExtension" */;
+			buildPhases = (
+				19034A4520E92FB600510B3E /* Sources */,
+				19034A4620E92FB600510B3E /* Frameworks */,
+				19034A4720E92FB600510B3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UploadExtension;
+			productName = UploadExtension;
+			productReference = 19034A4920E92FB600510B3E /* UploadExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		19034A5420E92FB700510B3E /* UploadExtensionSetupUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19034A6720E92FB700510B3E /* Build configuration list for PBXNativeTarget "UploadExtensionSetupUI" */;
+			buildPhases = (
+				19034A5120E92FB700510B3E /* Sources */,
+				19034A5220E92FB700510B3E /* Frameworks */,
+				19034A5320E92FB700510B3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UploadExtensionSetupUI;
+			productName = UploadExtensionSetupUI;
+			productReference = 19034A5520E92FB700510B3E /* UploadExtensionSetupUI.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +228,12 @@
 				ORGANIZATIONNAME = "Takayuki Sei";
 				TargetAttributes = {
 					19034A2F20E9251D00510B3E = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					19034A4820E92FB600510B3E = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					19034A5420E92FB700510B3E = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
@@ -113,6 +252,8 @@
 			projectRoot = "";
 			targets = (
 				19034A2F20E9251D00510B3E /* Study-ReplayKit */,
+				19034A4820E92FB600510B3E /* UploadExtension */,
+				19034A5420E92FB700510B3E /* UploadExtensionSetupUI */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +269,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		19034A4720E92FB600510B3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19034A5320E92FB700510B3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +295,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		19034A4520E92FB600510B3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19034A4F20E92FB600510B3E /* SampleHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19034A5120E92FB700510B3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19034A5B20E92FB700510B3E /* BroadcastSetupViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19034A5E20E92FB700510B3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19034A5420E92FB700510B3E /* UploadExtensionSetupUI */;
+			targetProxy = 19034A5D20E92FB700510B3E /* PBXContainerItemProxy */;
+		};
+		19034A6120E92FB700510B3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19034A4820E92FB600510B3E /* UploadExtension */;
+			targetProxy = 19034A6020E92FB700510B3E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		19034A3720E9251D00510B3E /* Main.storyboard */ = {
@@ -279,6 +463,7 @@
 		19034A4320E9251E00510B3E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FRJG63497R;
@@ -297,6 +482,7 @@
 		19034A4420E9251E00510B3E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FRJG63497R;
@@ -307,6 +493,82 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.daybysay.Study-ReplayKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		19034A6320E92FB700510B3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FRJG63497R;
+				INFOPLIST_FILE = UploadExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.daybysay.Study-ReplayKit.UploadExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19034A6420E92FB700510B3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FRJG63497R;
+				INFOPLIST_FILE = UploadExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.daybysay.Study-ReplayKit.UploadExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		19034A6520E92FB700510B3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FRJG63497R;
+				INFOPLIST_FILE = UploadExtensionSetupUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.daybysay.Study-ReplayKit.UploadExtensionSetupUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19034A6620E92FB700510B3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FRJG63497R;
+				INFOPLIST_FILE = UploadExtensionSetupUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.daybysay.Study-ReplayKit.UploadExtensionSetupUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -329,6 +591,24 @@
 			buildConfigurations = (
 				19034A4320E9251E00510B3E /* Debug */,
 				19034A4420E9251E00510B3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19034A6720E92FB700510B3E /* Build configuration list for PBXNativeTarget "UploadExtensionSetupUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19034A6520E92FB700510B3E /* Debug */,
+				19034A6620E92FB700510B3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19034A6820E92FB700510B3E /* Build configuration list for PBXNativeTarget "UploadExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19034A6320E92FB700510B3E /* Debug */,
+				19034A6420E92FB700510B3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
